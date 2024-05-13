@@ -22,10 +22,6 @@ p {
   font-size: 1.1em;
 }
 
-a {
-  /* text-decoration: none; */
-}
-
 header {
   background-color: #f7c85c;
   color: #fff;
@@ -107,4 +103,32 @@ ol {
 
 li {
   margin: 10px;
+}
+
+@keyframes header {
+  0% {
+    color: #c32f27;
+  }
+  25% {
+    color: #99582a;
+  }
+  50% {
+    color: #780116;
+  }
+  75% {
+    color: #85573d;
+  }
+  100% {
+    color: #c32f27;
+  }
+}
+
+header h1 {
+  animation-name: header;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+header a {
+  text-decoration: none;
 }
